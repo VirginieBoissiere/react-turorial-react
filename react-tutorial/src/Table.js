@@ -11,41 +11,20 @@ return (
 
 }
             
-const TableBody=()=>{
-    return (
+const TableBody = () => {
+    return <tbody />
+  }
 
-                <tbody>
-                    <tr>
-                        <td>Charlie</td>
-                        <td>Janitor</td>
-                    </tr>
-                    <tr>
-                        <td>Mac</td>
-                        <td>Bouncer</td>
-                    </tr>
-                    <tr>
-                        <td>Dee</td>
-                        <td>Aspiring actressgit add</td>
-                    </tr>
-                    <tr>
-                        <td>Dennis</td>
-                        <td>Bartender</td>
-                    </tr>
-
-                </tbody>
-    )
-}
-            
-        class Table extends Component{
-            render(){
-                return(
-                    <table>
-                        <TableHeader />
-                        <TableBody />
-                    </table>
-
-                )
-                
-            }
-        }
+  class Table extends Component {
+    render() {
+      const { characterData } = this.props
+  
+      return (
+        <table>
+          <TableHeader />
+          <TableBody characterData={characterData} />
+        </table>
+      )
+    }
+  }
 export default Table
