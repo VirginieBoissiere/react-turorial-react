@@ -19,6 +19,10 @@ class App extends Component {
           name: 'Dennis',
           job: 'Bartender',
         },
+        {
+            name: 'Virginie',
+            job: 'Dev',
+          },
       ]
   
       return (
